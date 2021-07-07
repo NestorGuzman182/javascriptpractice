@@ -1,11 +1,22 @@
+header {
+    text-align: center;
+}
+h1{
+    color: brown;
+}
+p{
+    font-size: 1.3rem;
+}
 main{
     display: flex;
     justify-content: space-evenly;
     margin: 20px;
 }
 section{
+    width: 300px;
     background-color: rgb(221, 221, 221);
     padding: 20px;
+    text-align: center;
 }
 .figure{
     width: 100px;

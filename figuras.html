@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Figuras Geométricas</h1>
+        <h1>FIGURAS GEOMÉTRICAS</h1>
         <p>Calcula el area y el perimetro de figuras geométricas</p>
     </header>
     <main>
@@ -27,10 +27,12 @@
             <h2>Triángulo</h2>
             <div class="figure triangle"></div>
             <form action="">
-                <label for="InputCuadrado">Escribe el lado de tu cuadrado: </label>
-                <input id="InputCuadrado" type="number">
-                <button type="button" onclick="perimetroCuadrado()">Perímetro</button>
-                <button type="button" onclick="areaCuadrado()">Área</button>
+                <label for="InputTriangleBase">Escribe los lados de tu triangulo: </label>
+                <input id="InputTriangle1" placeholder="lado 1" type="number">
+                <input id="InputTriangle2" placeholder="lado 2" type="number">
+                <input id="InputTriangleBase" placeholder="base" type="number">
+                <button type="button" onclick="perimetroTriangulo()">Perímetro</button>
+                <button type="button" onclick="areaTriangulo()">Área</button>
             </form>
         </section>
         <section>

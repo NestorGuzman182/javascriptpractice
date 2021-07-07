@@ -18,16 +18,27 @@ console.groupEnd();
 
 //Código Triangulo
 console.group("Triangulo")
-function perimetroTriangulo(lado1, lado2, base){
-    const perimetro = lado1 + lado2 + base ;
-    console.log('El perimetro del triangulo es de ' + perimetro + 'cm.');
+
+function perimetroTriangulo(){
+    const lado1 = parseInt(document.getElementById('InputTriangle1').value);
+    const lado2 = parseInt(document.getElementById('InputTriangle2').value);
+    const base = parseInt(document.getElementById('InputTriangleBase').value);
+    const perimetro = (lado1 + lado2 + base) ;
+    alert('El perimetro del triangulo es de ' + perimetro + 'cm.');
 }
-function areaTriangulo(altura, base){
+function areaTriangulo(){ 
+    const lado1 = document.getElementById('InputTriangle1').value;
+    const lado2 = document.getElementById('InputTriangle2').value;
+    const base = document.getElementById('InputTriangleBase').value;
+    const altura = Math.sqrt(Math.pow(lado1, 2) - Math.pow((base/2),2));
     const area = (base * altura) / 2 ;
-    console.log('El área del triangulo es de ' + area + 'cm2.');
+    if(lado1 == lado2){
+        alert('El área del triangulo es de ' + area + 'cm2.');
+    }else{
+        alert('El triangulo debe ser isosceles')
+    }
 }
-perimetroTriangulo(6, 6, 4);
-areaTriangulo(5.5,4)
+
 console.groupEnd();
 
 //Código Circulo
