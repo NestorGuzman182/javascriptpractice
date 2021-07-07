@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./figuras.css">
+    <title>Figuras geométricas</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras Geométricas</h1>
+        <p>Calcula el area y el perimetro de figuras geométricas</p>
+    </header>
+    <main>
+        <section>
+            <h2>Cuadrado</h2>
+            <div class="figure square"></div>
+            <form action="">
+                <label for="InputCuadrado">Escribe el lado de tu cuadrado: </label>
+                <input id="InputCuadrado" type="number">
+                <button type="button" onclick="perimetroCuadrado()">Perímetro</button>
+                <button type="button" onclick="areaCuadrado()">Área</button>
+            </form>
+        </section>
+        <section>
+            <h2>Triángulo</h2>
+            <div class="figure triangle"></div>
+            <form action="">
+                <label for="InputCuadrado">Escribe el lado de tu cuadrado: </label>
+                <input id="InputCuadrado" type="number">
+                <button type="button" onclick="perimetroCuadrado()">Perímetro</button>
+                <button type="button" onclick="areaCuadrado()">Área</button>
+            </form>
+        </section>
+        <section>
+            <h2>Circulo</h2>
+            <div class="figure circle"></div>
+            <form action="">
+                <label for="InputCirculo">Escribe el radio de tu circunferencia: </label>
+                <input id="InputCirculo" type="number">
+                <button type="button" onclick="perimetroCirculo()">Perímetro</button>
+                <button type="button" onclick="areaCirculo()">Área</button>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="./figuras.js"></script>
+</html>
