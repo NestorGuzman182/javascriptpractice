@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./figuras.html">Figuras</a></li>
+            <li><a href="./descuentos.html">Descuentos</a></li>
+            <li><a href="./estadistica.html">Estadistica</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>HERRAMIENTA ESTADÍSTICA</h1>
+        <p>Calcula la moda, media y mediana de una lista de números.</p>
+        <div class="hero">
+            <label for="list">Agrega números a tu lista: </label>
+            <input id="list" type="text">
+            <button type="button" onclick="construirLista()">Agregar</button>
+            <label for=""></label>
+            <div id="showList"></div>
+            <button type="button" class="btn-2" onclick="calculoEstadistico()">Calcular</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Promedio</h2>
+            <h2 id="promedio"></h2>
+        </section>
+        <section>
+            <h2>Mediana</h2>
+            <h2 id="mediana"></h2>
+        </section>
+        <section>
+            <h2>Moda</h2>
+            <h2 id="moda"></h2>
+        </section>
+    </main>
+</body>
+<script src="./estadistica.js"></script>
+</html>
